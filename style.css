@@ -1,0 +1,217 @@
+
+/* ===== Basic Page Styling ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* ===== Main Profile Container ===== */
+.profile {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(20, 25, 60, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Page Title ===== */
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aab7ff;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+/* ===== Introduction Section ===== */
+.intro {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    border: 3px solid #c4b5fd;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea, #f093fb);
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.intro h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+.intro small {
+    color: #d8ccff;
+    font-size: 14px;
+}
+
+/* ===== Section Headings ===== */
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* ===== About Me Section ===== */
+.about {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: #282044;
+    padding: 20px 25px;
+    text-align: center;
+    margin-bottom: 35px;
+    border-radius: 12px;
+}
+
+.about h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ===== Personal Details Section ===== */
+.details h2,
+.skills h2,
+.social h2 {
+    border-bottom: 1px solid #aab7ff;
+    padding-bottom: 15px;
+}
+
+.detail {
+    padding: 18px 10px;
+    border-bottom: 1px solid rgba(200, 200, 255, 0.4);
+}
+
+.detail span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #c4b5fd;
+}
+
+.detail p {
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+    margin-top: 35px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.skill-list span {
+    background: rgba(124, 92, 220, 0.18);
+    border: 1px solid #b8a5ff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-align: center;
+    min-width: 140px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.skill-list span:hover {
+    background: #764ba2;
+    transform: translateY(-3px);
+}
+
+/* ===== Social Links ===== */
+.social {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(124, 92, 220, 0.2);
+    border: 1px solid #b8a5ff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social a:hover {
+    background: #fbc2eb;
+    color: #282044;
+}
+
+/* ===== Footer ===== */
+footer {
+    border-top: 1px solid #aab7ff;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #d8ccff;
+}
+
+/* ===== Mobile Responsive Design ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .profile {
+        padding: 15px;
+    }
+
+    .intro h1 {
+        font-size: 22px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    .about {
+        padding: 15px;
+    }
+
+    .skill-list {
+        gap: 10px;
+    }
+
+    .skill-list span {
+        min-width: 110px;
+        padding: 10px 15px;
+    }
+}
